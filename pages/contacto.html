@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HotelShrimp-Contacto</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--Login link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+    <!--Para las fuentes -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!--Para el favicon -->
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/png" />
+    <!--Para el menú hamburguesa -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--Para bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--Para mi css -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="bg img-fluid">
+        <div class="contacto">
+            <div id="menu">
+                <div id="Topnavbanner" class="topnav" >
+                  <a href="../index.html"><img src="../img/HSblack.png" width="80px" length="80px"></img></a>
+                  
+                  <a class="menulink" href="../index.html">Página Principal</a>
+                  <a class="menulink" href="../pages/curriculum.html">Currículum</a>
+                  <a class="menulink" href="../pages/catalogo.html">Proyectos</a>
+                  <a class="menulink" style="display:none;" id="crudbtn" href="../pages/CRUD.html">CRUD</a>
+                  <a class="menulink" id="cont" href="../pages/contacto.html">Contacto</a>
+                  
+                      <a class="menulink btnmodal-verde loggedout modal-trigger" style="display:none;" data-target="modal-signup">Registrarse</a>
+                  
+                      <a class="menulink btnmodal-azul loggedout modal-trigger" style="display:none;" data-target="modal-login">Iniciar Sesión</a>
+                      <a class="menulink btnmodal-yell loggedin modal-trigger" style="display:none;" data-target="modal-account">Cuenta</a>
+                      <a class="menulink btnmodal-rojo loggedin" style="display:none;" id="logout">Salir</a>
+                 
+                  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a> 
+                </div>
+              </div>
+              
+              <div id="modal-signup" class="modal">
+                  <div class="modal-content">
+                    <h4>Registrarse</h4>
+                    <form id="signup-form">
+                      <div class="input-field">
+                        <input type="email" id="signup-email" required/>
+                        <label for="signup-email">Escribe un correo electrónico</label>   
+                      </div>
+                      <div class="input-field">
+                        <input type="password" id="signup-password" required/>
+                        <label for="signup-password">Escribe una contraseña</label>
+                      </div>
+                      <button class="btn btn-pers1 darken-2 z-depth-0">Registrarse</button>
+                    </form>
+                  </div>
+              </div>  
+              
+              <div id="modal-login" class="modal">
+                  <div class="modal-content">
+                    <h4>Iniciar Sesión</h4><br />
+                    <form id="login-form">
+                      <div class="input-field">
+                        <input type="email" id="login-email" required />
+                        <label for="login-email">Correo electrónico</label>
+                      </div>
+                      <div class="input-field">
+                        <input type="password" id="login-password" required />
+                        <label for="login-password">Contraseña</label>
+                      </div>
+                      <button class="btn btn-pers2 darken-2 z-depth-0">Entrar</button>
+                    </form>
+                  </div>
+                </div>
+  
+                <div id="modal-account" class="modal">
+                    <div class="modal-content center-align">
+                      <h4>Información de la cuenta</h4><br />
+                      <div class="account-details"></div>
+                    </div>
+                  </div>
+
+
+            <div class="container-fluid">
+              <div class="row my-row">
+                  <div class="col-md-6 map-responsive order-lg-1 order-sm-2">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.9127540869013!2d-99.18610208543647!3d19.37293004760677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff85fc8e2081%3A0x140608c32a3ca036!2sUNIVERSIDAD%20PANAMERICANA!5e0!3m2!1ses!2smx!4v1599841843779!5m2!1ses!2smx" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                  <div class="col-md-6 order-lg-2 order-sm-1">
+                      <form  method="post" action="contact.php" role="form">
+                          <div class="messages"></div>
+                          <div class="container controls">
+                              <div class="row">
+                                  <div class="col">
+                                    <h1> Contacto</h1>
+                                  </div>
+                                  
+                              </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="form_name">Nombre *</label>
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Inserta tu nombre *" required="required" data-error="Se requiere de un nombre.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="form_lastname">Teléfono</label>
+                                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Inserta tu apellido *">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                              <div class="row justify-content-center">
+                                  <div class="col-md-6">
+                                      <div class="form-group">
+                                          <label for="form_email">Correo *</label>
+                                          <input id="form_email" type="email" name="email" class="form-control" placeholder="Escribe tu correo eletrónico *" required="required" data-error="Se requiere de un correo.">
+                                          <div class="help-block with-errors"></div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                      <div class="form-group">
+                                          <label for="form_need">Tipo de usuario*</label>
+                                          <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                              <option value="">Selecciona un usuario</option>
+                                              <option value="Request quotation">Persona</option>
+                                              <option value="Request order status">Empresa</option>
+                                          </select>
+                                          <div class="help-block with-errors"></div>
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="form_pais">País*</label>
+                                        <select id="form_pais" name="pais" class="form-control" required="required" data-error="Please specify your need.">
+                                            <option value="">Selecciona un país </option>
+                                            <option value="Request1">Estados Unidos</option>
+                                            <option value="Request2">Canadá</option>
+                                            <option value="Request3">Rusia</option>
+                                            <option value="Request4">Brasil</option>
+                                            <option value="Request5">México</option>
+                                        </select>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="row justify-content-center">
+                                  <div class="col-md-12">
+                                      <div class="form-group">
+                                          <label for="form_message">Mensaje *</label>
+                                          <textarea id="form_message" name="message" class="form-control" placeholder="Mensaje para mí *" rows="4" required="required" data-error="Deja un mensaje."></textarea>
+                                          <div class="help-block with-errors"></div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-12">
+                                      <input type="submit" class="btn btn-success btn-send" value="Enviar">
+                                  </div>
+                              </div>
+                              <div class="row justify-content-center">
+                                  <div class="col-md-12">
+                                      <p>
+                                          <strong>*</strong> Estos campos son necesarios para enviar el formulario.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      
+                      </form>
+                  </div>
+              </div>
+              <div class="row">
+                  <footer class="page-footer">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <p>MAPA DEL SITIO</p>
+                            <ul class="list-unstyled">
+                                  <li class="d-flex justify-content-center">
+                                    <a href="../index.html">Página Principal</a>
+                                  </li>
+                                  <li class="d-flex justify-content-center">
+                                    <a href="../pages/curriculum.html">Currículum</a>
+                                  </li>
+                                  <li class="d-flex justify-content-center">
+                                      <a href="../pages/cardcatalogo.html">Proyectos</a>
+                                  </li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-4">
+                            <a class="d-flex justify-content-center" href="../pages/catalogo.html">CATÁLOGO DE PROYECTOS</a>
+                            <ul class="list-unstyled">
+                              <li class="d-flex justify-content-center">
+                                  <a href="../pages/proyecto01.html">Neptuno</a>
+                              </li>
+                              <li class="d-flex justify-content-center">
+                                  <a href="../pages/proyecto02.html">Piña</a>
+                              </li>
+                              <li class="d-flex justify-content-center">
+                                  <a href="../pages/proyecto03.html">Zulia Khan</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-4">
+                            <p><a href="../pages/contacto.html">CONTACTO</a></p>
+                            <ul id= "socialmedia" class="d-flex justify-content-center list-unstyled">
+                              <li>
+                                <a href="mailto:mariana.navarrete.2010@gmail.com" target="_blank" ><i class="fas fa-envelope-square"></i></a>
+                              </li>
+                              <li>
+                                <a href="https://www.instagram.com/hotelshrimpdraw/" target="_blank" ><i class="fab fa-instagram-square"></i></a>
+                              </li>
+                              <li>
+                                <a href="https://www.linkedin.com/public-profile/in/mariana-navarrete-cruz-265a9018a" target="_blank" ><i class="fab fa-linkedin"></i></a>
+                              </li>
+                              <li>
+                                  <a href="../pages/contacto.html"><i class="fas fa-plus"></i></a>
+                                </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="footer-copyright py-3 justify-content-center">
+                       <p>Created By HotelShrimp | © 2020 All rights reserved</p> 
+                      </div>
+                    </footer>
+              </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+      function myFunction() {
+        var x = document.getElementById("Topnavbanner");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+         <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-storage.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-auth.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAfQM3M7Mg34aKnkZSgB5t5uMhSvCdfsQ0",
+        authDomain: "segundoparcial-d0b28.firebaseapp.com",
+        databaseURL: "https://segundoparcial-d0b28.firebaseio.com",
+        projectId: "segundoparcial-d0b28",
+        storageBucket: "segundoparcial-d0b28.appspot.com",
+        messagingSenderId: "521832827503",
+        appId: "1:521832827503:web:c62419ac96044c35a9db9a"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+     <script src="../scripts/signcode.js"></script>
+  </body>
+</html>
+
