@@ -1,0 +1,650 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap");
+#tituloproyecto {
+  color: #ba2d0b;
+  font-weight: bold;
+  align-content: center;
+}
+
+.modal {
+  align-content: center;
+  margin-top: 60px;
+  width: 50%;
+  height: 30%;
+}
+#modal-account {
+  width: 50%;
+  height: auto;
+}
+.bg-trans {
+  background-color: transparent;
+}
+.mt-pers {
+  margin-top: 130px;
+}
+.bg-li {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #f0e1c552;
+}
+.bg-pers {
+  background-color: #111a21a2;
+}
+.my-cards {
+  color: black;
+}
+.btn-pers1:hover {
+  opacity: 1;
+  color: #111a21;
+  background-color: #ba2d0b;
+  text-decoration: none;
+}
+.btn-pers2:hover {
+  opacity: 1;
+  color: #111a21;
+  background-color: #379b64;
+  text-decoration: none;
+}
+.btn-pers {
+  background-color: #ba2d0b;
+  color: #f1e9da;
+}
+.btn-pers1 {
+  background-color: #379b64;
+  color: #f1e9da;
+}
+.btn-pers2 {
+  background-color: rgb(0, 89, 255);
+  color: #f1e9da;
+}
+.badge-dark {
+  color: black;
+}
+.mySlides {
+  display: none;
+}
+.mt-9 {
+  margin-top: 150px;
+  margin-left: 75px;
+}
+.card-cont {
+  margin: 50px;
+  background-color: #111a21;
+  border-radius: 10px;
+}
+#myimg {
+  height: 300px;
+  width: 300px;
+}
+.flip-card {
+  background-color: transparent;
+  width: 359px;
+  height: 500px;
+}
+
+.flip-card-inner {
+  background-color: white;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-image: url("../img/card2.png");
+  background-size: 279px 470px;
+  background-repeat: no-repeat;
+  align-content: center;
+  margin: 18px 0px 30px -40px;
+  color: white;
+  width: 359px;
+  height: 500px;
+  transform: rotateY(180deg);
+}
+h1,
+h2,
+h3 {
+  font-family: "MuseoModerno", cursive;
+  color: #f1e9da;
+}
+p {
+  font-family: "Raleway", sans-serif;
+  color: #f1e9da;
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.row p,
+.row h3,
+.row h2 {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+/* .highlight {
+  border: solid #379b64;
+  width: 60%;
+} */
+/* .middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 35%;
+  left: 65%;
+  transform: translate(-135%, 425%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+} */
+.col-md-6 h1 {
+  align-content: center;
+  width: 100%;
+}
+input {
+  width: 100%;
+}
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  font-family: "MuseoModerno", cursive;
+  background-color: #111a21;
+  color: #f1e9da;
+  font-size: 26px;
+  font-weight: strong;
+  text-decoration: none;
+}
+#neptune {
+  text-align: right;
+  padding: 30px;
+  background-color: #111a21ad;
+}
+#neptune h1 {
+  text-align: center;
+}
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  background-image: url("../img/background1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+.row h1,
+.row h2 {
+  text-align: right;
+  font-family: "MuseoModerno", cursive;
+  color: #f1e9da;
+  text-shadow: 2px 2px black;
+}
+.column {
+  margin: 15px 15px 0;
+  padding: 0;
+}
+.column:last-child {
+  padding-bottom: 60px;
+}
+.column::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.column div {
+  position: relative;
+  float: left;
+  width: 300px;
+  height: 200px;
+  margin: 0 0 0 25px;
+  padding: 0;
+}
+.column div:first-child {
+  margin-left: 0;
+}
+.column div span {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  z-index: -1;
+  display: block;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  color: #444;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+}
+.col {
+  padding: 0px;
+  margin: 0px;
+}
+.col h1 {
+  text-align: center;
+}
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+figure {
+  width: 400px;
+  height: 600px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+figure:hover + span {
+  bottom: -36px;
+  opacity: 1;
+}
+.hoverimgeffect figure:hover img {
+  -webkit-filter: grayscale(100%) blur(3px);
+  filter: grayscale(100%) blur(3px);
+  transition: 0.3s ease;
+}
+h1 {
+  font-family: "MuseoModerno", cursive;
+  font-size: 60px;
+}
+.controls {
+  background-color: rgba(255, 255, 255, 0.205);
+  padding: 20px;
+  border-radius: 18px;
+}
+a {
+  color: #f1e9da;
+}
+#descripcion {
+  text-align: right;
+  color: #f1e9da;
+  font-size: 23px;
+}
+#datacolumn {
+  padding: 28px;
+}
+
+.foto {
+  margin: 10px;
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+#banner .container-fluid {
+  margin-top: 180px;
+  margin-left: 300px;
+}
+#proyectos .container-fluid {
+  margin-top: 180px;
+  margin-left: 300px;
+}
+#mapaform .row:first-child {
+  margin: 0px;
+}
+#contact-form {
+  margin: 180px 0px 0px 0px;
+}
+#mapaform.contact-form {
+  margin: 0px;
+  padding: 0px;
+}
+.my-row {
+  margin: 225px 0px 0px 0px;
+  padding: 0px 70px 0px;
+}
+.banner {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  color: #000;
+}
+.clear {
+  clear: both;
+}
+#content {
+  margin-top: 150px;
+  margin-left: 200px;
+  align-content: right;
+}
+#Topnavbanner {
+  background-color: #111a21a9;
+}
+.nav {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+.nav-item {
+  background-color: #379b64;
+  border-radius: 12px;
+  box-shadow: 2px 2px;
+  margin: 10px;
+}
+.topnav {
+  background-color: #111a21;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  overflow: hidden;
+}
+
+.topnav a:not(first-child) {
+  float: left;
+  display: block;
+  text-align: right;
+  margin: 28px;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.6s ease;
+}
+.topnav a:first-child {
+  margin: 10px 30px;
+  padding: 10px;
+}
+.topnav .btnmodal-rojo {
+  margin: 28px;
+  padding: 8px;
+  border-style: solid;
+  font-weight: bold;
+  border-radius: 16px;
+}
+.btnmodal-gold {
+  padding: 10px;
+  border-style: solid;
+  background-color: black;
+  border-color: white;
+  border-width: medium;
+  color: #f1e9da;
+  font-weight: bold;
+  border-radius: 16px;
+  transition: 0.7s;
+}
+.btnmodal-gold:hover {
+  opacity: 1;
+  background-color: black;
+  border-radius: 0px;
+  font-weight: bold;
+  color: #ac7f1e;
+  border-color: #ac7f1e;
+  text-decoration: none;
+  transition: 0.7s;
+}
+.topnav .btnmodal-verde {
+  margin: 28px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #379b64;
+  font-weight: bold;
+  border-radius: 16px;
+}
+.topnav .btnmodal-yell {
+  margin: 28px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #c5a027;
+  font-weight: bold;
+  border-radius: 16px;
+}
+.topnav .btnmodal-azul,
+.btnmodal-verde,
+.btnmodal-yell {
+  margin: 28px;
+  padding: 8px;
+  border-style: solid;
+  border-color: rgb(0, 89, 255);
+  font-weight: bold;
+  border-radius: 16px;
+}
+
+.topnav a:hover {
+  opacity: 1;
+  color: #ba2d0b;
+  text-decoration: none;
+}
+
+.topnav a.menulink:hover {
+  opacity: 1;
+  background-color: #111a21;
+  border-radius: 60px;
+  font-weight: bold;
+  color: #ba2d0b;
+  text-decoration: none;
+}
+
+.topnav a.btnmodal-verde:hover {
+  opacity: 1;
+  color: #379b64;
+  text-decoration: none;
+}
+.topnav a.btnmodal-azul:hover {
+  opacity: 1;
+  color: rgb(0, 89, 255);
+  text-decoration: none;
+}
+.topnav a.btnmodal-yell:hover {
+  opacity: 1;
+  color: #c5a027;
+  text-decoration: none;
+}
+.topnav .icon {
+  display: none;
+  padding: 15px;
+  border-radius: 18px;
+}
+#cont {
+  border-style: double #f1e9da;
+}
+.page-footer {
+  background-color: rgb(48, 48, 48);
+  margin-top: 215px;
+  padding: 20px 10px;
+  bottom: 0;
+  width: 100%;
+  font-size: small;
+  color: #f1e9da;
+}
+
+footer ul#socialmedia li {
+  display: inline;
+  padding: 10px;
+}
+footer a:hover {
+  text-decoration: none;
+  transition: 0.3s;
+  color: #ba2d0b;
+}
+footer .row {
+  margin: 10px 0px;
+  align-content: center;
+}
+.footer-copyright {
+  color: #ba2d0b;
+  text-align: center;
+}
+.cv {
+  color: #f1e9da;
+  font-family: "Raleway", sans-serif;
+}
+.cv h3,
+.cv h2 {
+  font-family: "MuseoModerno", cursive;
+}
+.cv h4 {
+  color: black;
+}
+.pesp {
+  color: black;
+}
+label {
+  font-family: "MuseoModerno", cursive;
+  color: #f1e9da;
+  font-weight: strong;
+}
+footer .row p {
+  text-align: center;
+  font-size: small;
+}
+footer i {
+  font-size: x-large;
+}
+#datacolumn.col-md-4 {
+  background-color: #111a21;
+}
+#datacolumn.col-md-8 {
+  background-color: #111a2196;
+}
+.cvcont {
+  padding: 0px;
+  margin: 0px;
+}
+.row li {
+  font-size: 18px;
+}
+li strong {
+  color: #f1e9da;
+  text-shadow: 3px 3px black;
+  font-weight: strong;
+}
+.marg {
+  margin-top: 100px;
+  padding: 0px 90px;
+}
+.embed-responsive {
+  padding: 70px;
+}
+#img-card {
+  margin-right: 75px;
+  width: 65%;
+  height: 65%;
+}
+.img-thumbnail {
+  background-color: #865f1d;
+}
+.par {
+  font-family: "MuseoModerno", cursive;
+  color: #f1e9da;
+  margin: 18px;
+  padding-right: 10px;
+}
+.par-desc {
+  font-family: "MuseoModerno", cursive;
+  font-size: 12px;
+  color: #f1e9da;
+  margin: 12px;
+  padding-right: 70px;
+}
+.par-edit {
+  margin-left: 38px;
+  margin-top: 5px;
+}
+.par-edit1 {
+  margin-left: 55px;
+  margin-top: 20px;
+}
+@media screen and (max-width: 850px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+  .topnav.responsive .icon {
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a:not(:last-child) {
+    float: none;
+    display: block;
+    text-align: left;
+    border-style: none;
+    border-radius: 10px;
+    padding: 5px 15px 5px 35px;
+    width: 40%;
+  }
+  .topnav a:hover:not(:first-child) {
+    opacity: 1;
+    color: #ba2d0b;
+    background-color: #40484e57;
+  }
+}
+@media screen and (max-width: 550px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+  .topnav.responsive .icon {
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a:not(:last-child) {
+    float: none;
+    display: block;
+    text-align: left;
+    border-style: none;
+    border-radius: 10px;
+    padding: 5px 15px 5px 35px;
+    width: 40%;
+  }
+  .topnav a:hover:not(:first-child) {
+    opacity: 1;
+    color: #ba2d0b;
+    background-color: #40484e57;
+  }
+}
